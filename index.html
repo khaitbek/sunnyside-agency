@@ -9,12 +9,47 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- script -->
+    <script src="./script/nav.js" defer></script>
 </head>
 
 <body>
     <!-- site header start -->
-    <header class="site-header">
-        <div class="container"></div>
+    <header class="site-header header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="site-logo logo" href="./index.html">
+                    <img class="logo__img" src="./images/logo.svg" width="170" height="33"
+                        alt="Sunnyside Agency's logo">
+                </a>
+
+                <!-- hamburger -->
+                <btn class="header__btn hamburger" id="hamburger" aria-controls="#navigation">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </btn>
+
+                <!-- navigation -->
+                <nav class="navigation" id="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link | text-white" href="#">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link | text-white" href="#"> Services</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link | text-white" href="#">Projects</a>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__btn contact-btn | btn yellow-btn fw-bold">CONTACT</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- site header end -->
@@ -23,9 +58,63 @@
     <main class="site-main">
         <!-- hero section start -->
         <section class="hero">
-            <div class="container"></div>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">WE ARE CREATIVES</h1>
+                    <span class="hero__arrow arrow-down">
+                        &#8595;
+                    </span>
+                </div>
+            </div>
         </section>
         <!-- hero section end -->
+
+        <!-- features section start -->
+        <section class="features">
+            <section class="transform">
+                <div class="transform__wrapper | flow">
+                    <img class="transform__img egg-img" src="./images/egg.jpg"
+                        srcset="./images/egg.jpg 1x, ./images/egg@2x.jpg 2x" width="375" height="312" alt="egg">
+
+                    <div class="transform__inner flow__inner">
+                        <h2 class="transform__title flow__title">
+                            Transform your brand
+                        </h2>
+                        <p class="transform__text | flow__text text-100 ">
+                            We are a full-service creative agency specializing in helping brands grow fast. Engage your
+                            clients through compelling visuals that do most of the marketing for you.
+                        </p>
+
+                        <a class="transform__link flow__link" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="standout">
+                <div class="standout__wrapper | flow">
+                    <img class="standout__img egg-img" src="./images/standout.jpg"
+                        srcset="./images/standout.jpg 1x, ./images/standout@2x.jpg 2x" width="375" height="312" alt="egg">
+
+                    <div class="standout__inner flow__inner">
+                        <h2 class="standout__title flow__title">
+                            Stand out to the right audience
+                        </h2>
+                        <p class="standout__text | flow__text text-100 ">
+                            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                        </p>
+
+                        <a class="standout__link flow__link" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="transform">
+                <div class="transform__wrapper | flow">
+
+                </div>
+            </section>
+        </section>
+        <!-- features section end -->
     </main>
     <!-- main content end -->
 
